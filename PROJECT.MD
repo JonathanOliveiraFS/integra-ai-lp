@@ -1,65 +1,44 @@
-Landing Page - integra.aí
-- Página focada em apresentar sobre os benefícios da automação, como funciona, facilidade de aplicação (menor burocracia) e um formulário para marcar reunião.
-- Título (head) com o nome da empresa (Integra.aí) e o slogan (automação inteligente), logo abaixo um fluxograma e um número sobre ganhos, como: 
-	- as empresas que automatizam seus processos tem um ganho de X% ou aumento de performance Y ou em tal coisa... 
-- Subtítulo: 
-	- Transformamos a operação de clínicas e escritórios integrando assistentes inteligentes e painéis de dados para que foque no que realmente importa: VENDAS! 
-- Secão abaixo: O que pode ser automatizado
-	- atendimento (Atendimento 24/7: Nunca mais perca um paciente ou cliente de madrugada porque ninguém respondeu)
-	- relatórios (métricas da empresa, focado no negócio e vendas)
-	- performance (análise de dados, dashboard para acompanhar seu negócio)
-	- máquina de vendas (leads o tempo todo)
-	- lembretes (resgate de clientes esquecidos ou inativos, chega de cadeiras vazias)
+# Landing Page - Integra.ai
 
-- Pequeno storytelling de uma automação com impacto real
-- Frase sobre automação e um botão para contato
-	- contato leva a um formulário que possui:
-		- nome
-		- e-mail
-		- telefone
-		- descrição do que quer automatizar
-- **Seção de Prova Social (Confiança):** 
-	- "Tecnologias que utilizamos" (logos da OpenAI, Meta/WhatsApp, Python, LangChain). Isso transfere a autoridade dessas ferramentas gigantes para o seu negócio.
-- **Quebra de Objeções (FAQ):** 
-	- Donos de pequenos negócios têm medo de que IA seja caro, demorado ou que vá quebrar os processos atuais. Adicione 3 a 4 perguntas frequentes antes do formulário. Exemplo: _"Preciso mudar meu sistema atual?"_ (Resposta: Não, nós nos integramos ao que você já usa). OBS: acesse o documento na pasta raiz e lá terá o arquivo da empresa
-- **Rodapé (Footer):** 
-	- Essencial para transmitir profissionalismo e evitar bloqueios em anúncios. Inclua links para Política de Privacidade, Termos de Uso e o Copyright da empresa.
-- DOCUMENTO DE ESPECIFICAÇÃO: Landing Page Integra.aí
-	- Utilize a Stack para criar o site: 
-		- React com vite (Framework)
-		- Tailwind CSS (estilização)
-		- Lucide React (ícones)
-		- shadcn/ui
-		- Cores de destaque: Branco e Azul serenity
-		- Fontes: Montserrat, sempre se atente ao contraste
-		- Transição: de uma seção para outra transite entre as cores, dando ênfase e contraste correto
-		- **Regra Estrita de Código:** NÃO crie arquivos `.css` ou `.scss` separados. Use as classes utilitárias do Tailwind estritamente inline nos componentes. Todo código deve ser modular.
-	- Contexto do projeto:
-		- **Objetivo:** Criar uma landing page B2B de alta conversão para captação de leads.
-		- **Público-alvo:** Clínicas, escritórios e pequenos negócios buscando automação operacional.
-		- **Tom de voz:** Profissional, tecnológico, direto e voltado para a resolução de dores (menos burocracia, mais eficiência).
-	- **Estrutura de Componentes (Layout Top to Bottom)** O layout deve seguir exatamente esta ordem de renderização:
-		- **Header / Navbar:**
-		    - Logo (Texto "Integra.ai" com fonte bold e cor `slate-900`).
-		    - Botão CTA: "Falar com Especialista" (com âncora para a seção de contato).
-		- **Hero Section:**
-			- **Copy Principal:** Focado no ganho de performance e fim de gargalos.
-			- **Visual:** Espaço reservado (placeholder) onde será inserido o fluxograma sobre o fluxo de automação.
-			- **Banner de Dados:** Faixa horizontal inferior destacando a métrica (ex: "Empresas automatizadas ganham X% em eficiência").
-		- **Seção: O que pode ser automatizado:**
-			- Utilizar grid de Cards (componente `Card` do shadcn/ui) com ícones do Lucide.
-			- _Atendimento:_ Destaque para a assistente virtual B.IA operando 24/7.
-			- _Relatórios:_ Dashboards focados no negócio.
-			- _Performance:_ Máquina de vendas e qualificação de leads.
-			- _Lembretes:_ Resgate de clientes e redução de faltas em agendamentos.
-		- **Seção: Storytelling & Impacto:**
-			- Layout dividido (texto na esquerda, imagem de placeholder na direita).
-			- Narrativa: Como uma automação real transformou o cenário de caos em controle.
-		- **Formulário de Contato (Lead Capture):**
-			- Formulário limpo usando os componentes `Input`, `Textarea` e `Button` do shadcn/ui.
-			- Campos obrigatórios: Nome, E-mail, Telefone/WhatsApp, Descrição do gargalo atual.
-			- **Lógica de Envio (Crucial):** O formulário NÃO deve recarregar a página. Use a API pública do **Web3Forms** para enviar os dados.
-			- **Configuração:** Crie um estado (`useState`) para gerenciar os dados do formulário e o estado de "carregando" do botão. Ao submeter, faça um `fetch` POST para `https://api.web3forms.com/submit` passando a chave de acesso (que ficará em uma variável de ambiente).
-			- **Feedback Visual:** Após o envio bem-sucedido, limpe o formulário e mostre uma mensagem de sucesso na tela (pode usar o componente `Toast` do shadcn/ui).
-		- **Footer:**
-			- Links simples, Copyright Integra.ai e informações de contato.
+## Visão Geral
+- Página focada em apresentar sobre os benefícios da automação, como funciona, facilidade de aplicação (menor burocracia) e um formulário para marcar reunião.
+- Título (head) com o nome da empresa (Integra.ai) e o slogan (Automação Inteligente).
+- Fluxograma visual e um dado quantitativo de ganhos (ex: aumento de performance Y%).
+- Subtítulo: Transformamos a operação de clínicas e escritórios integrando assistentes inteligentes e painéis de dados para que foque no que realmente importa: VENDAS! 
+
+## Estrutura de Conteúdo
+- **O que pode ser automatizado:**
+    - Atendimento (Atendimento 24/7: Nunca mais perca um paciente ou cliente de madrugada porque ninguém respondeu).
+    - Relatórios (Métricas da empresa, focado no negócio e vendas).
+    - Performance (Análise de dados, dashboard para acompanhar seu negócio).
+    - Máquina de vendas (Leads o tempo todo).
+    - Lembretes (Resgate de clientes esquecidos ou inativos, chega de cadeiras vazias).
+- **Storytelling:** Pequeno storytelling de uma automação com impacto real.
+- **Prova Social:** Tecnologias que utilizamos (OpenAI, Meta/WhatsApp, Python, LangChain).
+- **Quebra de Objeções (FAQ):** 3 a 4 perguntas frequentes. Ex: "Preciso mudar meu sistema atual?" (Resposta: Não, nós nos integramos ao que você já usa). *OBS: Consultar documento da empresa na raiz para mais contexto, se necessário.*
+- **Lead Capture:** Formulário de contato (Nome, E-mail, Telefone, Descrição do gargalo).
+- **Footer:** Links para Políticas, Termos de Uso e Copyright.
+
+## Stack Tecnológica (STATUS: OPERANTE E CONFIGURADA)
+O ambiente já foi inicializado e está rodando perfeitamente. NÃO modifique arquivos de configuração base (`vite.config.ts`, `tsconfig.json`, `tailwind.config.js`) sem extrema necessidade.
+- **Framework:** React 18 + Vite (Template TypeScript).
+- **Estilização:** Tailwind CSS v3 (Configurado via PostCSS e injetado no `index.css`).
+- **Componentes:** shadcn/ui (Instalado via `npx shadcn@latest`. Preset: Nova, Cor Base: Slate, CSS Variables: Ativo).
+- **Ícones:** Lucide React.
+- **Design System:** - Cores de destaque: Branco e Azul Serenity (`blue-600` a `blue-800`). Escala de cinza baseada em `slate`.
+    - Fontes: Montserrat (atentar ao contraste).
+    - Transição: transição suave entre seções com ênfase nas cores da marca.
+- **Regras Estritas de Código:** - NÃO crie arquivos `.css` ou `.scss` separados. Use classes utilitárias do Tailwind estritamente inline. 
+    - Código modular. 
+    - Para adicionar novos componentes do shadcn, use EXCLUSIVAMENTE o comando `npx shadcn@latest add [componente]`.
+
+## Estrutura de Componentes (Renderização Top-to-Bottom)
+1. **Header:** Logo (texto "Integra.ai" bold `slate-900` com ".ai" em `blue-600`), Botão CTA "Falar com Especialista". *(Nota: Este componente já foi criado no ambiente)*.
+2. **Hero Section:** Copy principal, placeholder para fluxograma, banner de dados na parte inferior.
+3. **Features (O que pode ser automatizado):** Grid de Cards (shadcn) detalhando Atendimento (B.IA 24/7), Relatórios, Performance e Lembretes.
+4. **Storytelling & Impacto:** Layout dividido em duas colunas (texto narrativo e placeholder de imagem).
+5. **Formulário de Contato (Lead Capture):**
+    - Componentes: `Input`, `Textarea` e `Button` (shadcn).
+    - **Lógica Estrita:** NÃO recarregar a página. Usar estado (`useState`) para dados e loading. Ao submeter, fazer `fetch` POST para `https://api.web3forms.com/submit` passando a chave de acesso (via variável de ambiente `.env`).
+    - Feedback: Limpar formulário e exibir `Toast` (shadcn) de sucesso.
+6. **Footer:** Links simples, informações de contato e Copyright Integra.ai.
