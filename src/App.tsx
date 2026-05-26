@@ -6,6 +6,7 @@ import { SocialProof } from "./components/SocialProof";
 import { FAQ } from "./components/FAQ";
 import { ContactForm } from "./components/ContactForm";
 import { Footer } from "./components/Footer";
+import { WhatsAppButton } from "./components/WhatsAppButton";
 import { Toaster } from "@/components/ui/sonner";
 
 function App() {
@@ -20,6 +21,7 @@ function App() {
         <FAQ />
         <ContactForm />
       </main>
+      <WhatsAppButton />
       <Footer />
       <Toaster position="top-center" richColors />
     </div>

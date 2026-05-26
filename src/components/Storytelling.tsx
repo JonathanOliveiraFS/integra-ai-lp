@@ -1,82 +1,86 @@
 import { Badge } from "@/components/ui/badge";
-import { CheckCircle2 } from "lucide-react";
+import { CheckCircle2, Award, BookOpen, GraduationCap } from "lucide-react";
+import jonathanPhoto from "@/assets/jonathan-3.jpg";
 
 export function Storytelling() {
   return (
-    <section className="py-24 bg-white overflow-hidden">
+    <section id="especialista" className="py-24 bg-slate-50 overflow-hidden">
       <div className="container mx-auto px-4">
         <div className="flex flex-col lg:flex-row items-center gap-16">
-          {/* Coluna de Texto */}
-          <div className="flex-1 space-y-8">
+          {/* Jonathan Photo Column */}
+          <div className="flex-1 relative order-2 lg:order-1">
+            <div className="relative z-10 rounded-[3rem] aspect-square overflow-hidden shadow-2xl border-[12px] border-white">
+              <img 
+                src={jonathanPhoto} 
+                alt="Jonathan Oliveira - Especialista" 
+                className="w-full h-full object-cover scale-110 hover:scale-100 transition-transform duration-700"
+              />
+            </div>
+            {/* Achievement Badges */}
+            <div className="absolute -bottom-6 -right-6 z-20 bg-white p-6 rounded-2xl shadow-xl border border-slate-100 hidden md:block">
+              <div className="flex items-center gap-4 mb-3">
+                <div className="bg-blue-100 p-2 rounded-lg">
+                  <Award className="w-6 h-6 text-blue-600" />
+                </div>
+                <div>
+                  <p className="text-xs text-slate-500 uppercase font-bold tracking-wider">Expertise</p>
+                  <p className="text-slate-900 font-bold">Biomédico Esteta</p>
+                </div>
+              </div>
+              <div className="flex items-center gap-4">
+                <div className="bg-green-100 p-2 rounded-lg">
+                  <GraduationCap className="w-6 h-6 text-green-600" />
+                </div>
+                <div>
+                  <p className="text-xs text-slate-500 uppercase font-bold tracking-wider">Acadêmico</p>
+                  <p className="text-slate-900 font-bold">Mestrando UECE</p>
+                </div>
+              </div>
+            </div>
+            
+            <div className="absolute -top-10 -left-10 w-48 h-48 bg-blue-600/10 rounded-full blur-3xl -z-10"></div>
+          </div>
+
+          {/* Text Content Column */}
+          <div className="flex-1 space-y-8 order-1 lg:order-2">
             <div className="space-y-4">
-              <Badge variant="outline" className="text-blue-600 border-blue-200 bg-blue-50 px-3 py-1 text-sm font-medium">
-                Impacto Real
+              <Badge className="bg-blue-600 hover:bg-blue-600 text-white px-4 py-1 text-sm font-bold uppercase tracking-widest">
+                O Especialista por trás dos números
               </Badge>
-              <h2 className="text-3xl md:text-4xl lg:text-5xl font-bold text-slate-900 leading-tight">
-                De <span className="text-slate-400 line-through decoration-red-400">caos operacional</span> para uma máquina de crescimento.
+              <h2 className="text-4xl md:text-5xl font-extrabold text-slate-900 leading-tight">
+                Ciência, Estratégia e <span className="text-blue-600">Performance Real.</span>
               </h2>
             </div>
 
             <div className="space-y-6 text-slate-600 text-lg leading-relaxed">
               <p>
-                Imagine o Dr. Ricardo, dono de uma clínica em expansão. Sua equipe passava 40% do dia respondendo mensagens repetitivas no WhatsApp, enquanto dezenas de leads eram perdidos durante a noite por falta de resposta.
+                Eu sou <strong>Jonathan Oliveira</strong>, e minha trajetória não começou no marketing, mas na <strong>Biomedicina Estética</strong>. Durante anos, atuei na linha de frente de grandes redes como <em>Espaço Laser</em> e <em>Dermarey</em>, onde aprendi que o segredo de uma clínica lucrativa não é apenas o procedimento, mas a <strong>esteira comercial e a atração de leads qualificados.</strong>
               </p>
               <p>
-                Após integrar a <strong>Integra.ai</strong>, o cenário mudou drasticamente. Sua B.IA (Business Intelligence & Automation) agora qualifica leads 24/7, agenda consultas automaticamente e envia lembretes que reduziram o absenteísmo em 35%.
+                Como professor universitário e mestrando em Ciências Fisiológicas (UECE), uni o rigor científico à habilidade de comunicação para fundar a <strong>Integra.ai</strong>. Minha missão é traduzir métricas complexas em lucro real para o seu negócio local.
               </p>
             </div>
 
-            <ul className="space-y-4">
+            <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
               {[
-                "Redução de 60% no trabalho manual repetitivo",
-                "Aumento de 25% na conversão de novos leads",
-                "Dashboards em tempo real para tomada de decisão"
+                { icon: <CheckCircle2 className="w-5 h-5 text-blue-600" />, text: "Foco em Negócios Locais" },
+                { icon: <BookOpen className="w-5 h-5 text-blue-600" />, text: "Metodologia Científica" },
+                { icon: <Award className="w-5 h-5 text-blue-600" />, text: "Ex-Espaço Laser & Dermarey" },
+                { icon: <GraduationCap className="w-5 h-5 text-blue-600" />, text: "Professor & Pesquisador" }
               ].map((item, i) => (
-                <li key={i} className="flex items-center gap-3 text-slate-700 font-medium">
-                  <CheckCircle2 className="w-6 h-6 text-blue-600 flex-shrink-0" />
-                  {item}
-                </li>
+                <div key={i} className="flex items-center gap-3 p-3 bg-white rounded-xl border border-slate-100 shadow-sm">
+                  {item.icon}
+                  <span className="text-slate-700 font-semibold text-sm">{item.text}</span>
+                </div>
               ))}
-            </ul>
+            </div>
 
-            <div className="pt-4">
-              <p className="text-slate-500 italic border-l-4 border-blue-600 pl-4">
-                "A Integra.ai não apenas automatizou processos, ela devolveu o tempo que eu precisava para focar na estratégia e no atendimento de qualidade."
+            <div className="pt-6 border-t border-slate-200">
+              <p className="text-slate-500 italic">
+                "Não sou apenas um gestor de tráfego. Sou um parceiro que entende a fisiologia do seu negócio e a psicologia do seu cliente."
               </p>
-              <p className="mt-2 font-bold text-slate-900 ml-5">— Dr. Ricardo, Diretor Clínico</p>
+              <p className="mt-4 font-extrabold text-slate-900">— Jonathan Oliveira</p>
             </div>
-          </div>
-
-          {/* Coluna de Imagem/Placeholder */}
-          <div className="flex-1 relative">
-            <div className="relative z-10 bg-slate-100 rounded-3xl aspect-square overflow-hidden shadow-2xl border border-slate-200 flex items-center justify-center p-8">
-               {/* Simulação de um Dashboard Simples */}
-               <div className="w-full h-full bg-white rounded-xl shadow-inner p-6 flex flex-col gap-6">
-                 <div className="flex justify-between items-center">
-                    <div className="space-y-2">
-                      <div className="h-4 w-24 bg-slate-200 rounded animate-pulse"></div>
-                      <div className="h-8 w-32 bg-blue-600 rounded"></div>
-                    </div>
-                    <div className="w-12 h-12 bg-blue-100 rounded-full flex items-center justify-center">
-                      <CheckCircle2 className="w-6 h-6 text-blue-600" />
-                    </div>
-                 </div>
-                 <div className="flex-1 grid grid-cols-3 gap-4 items-end">
-                    <div className="bg-blue-200 h-[40%] rounded-t-lg"></div>
-                    <div className="bg-blue-400 h-[65%] rounded-t-lg"></div>
-                    <div className="bg-blue-600 h-[90%] rounded-t-lg"></div>
-                 </div>
-                 <div className="space-y-3">
-                    <div className="h-3 w-full bg-slate-100 rounded"></div>
-                    <div className="h-3 w-3/4 bg-slate-100 rounded"></div>
-                    <div className="h-3 w-1/2 bg-slate-100 rounded"></div>
-                 </div>
-               </div>
-            </div>
-            
-            {/* Elementos Decorativos */}
-            <div className="absolute -top-6 -right-6 w-32 h-32 bg-blue-600/10 rounded-full blur-3xl"></div>
-            <div className="absolute -bottom-10 -left-10 w-48 h-48 bg-blue-600/5 rounded-full blur-3xl"></div>
           </div>
         </div>
       </div>
