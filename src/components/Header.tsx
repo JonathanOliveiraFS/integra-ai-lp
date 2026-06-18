@@ -7,7 +7,7 @@ export function Header() {
     <header className="fixed top-0 w-full bg-white/90 backdrop-blur-md z-50 border-b border-slate-100">
       <div className="container mx-auto px-4 h-24 flex items-center justify-between">
         <div className="text-3xl font-black text-slate-900 tracking-tighter">
-          INTEGRA<span className="text-blue-600">.AI</span>
+          INTEGRA<span className="text-blue-600">.ADS</span>
         </div>
         <nav className="hidden md:flex items-center gap-8">
           <a href="#servicos" className="text-slate-600 font-bold hover:text-blue-600 transition-colors">Serviços</a>

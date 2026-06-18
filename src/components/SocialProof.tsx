@@ -1,10 +1,26 @@
-import { Cpu, MessageSquare, Code2, Database } from "lucide-react";
+import { Search, Share2, BarChart3, ShieldCheck } from "lucide-react";
 
 const techs = [
-  { name: "OpenAI", icon: Cpu, desc: "Modelos GPT-4o para inteligência avançada." },
-  { name: "Meta / WhatsApp", icon: MessageSquare, desc: "Integração oficial via API Business." },
-  { name: "Python / LangChain", icon: Code2, desc: "Orquestração robusta de agentes de IA." },
-  { name: "Segurança", icon: Database, desc: "Arquitetura de dados isolada e criptografada." },
+  { 
+    name: "Google Ads", 
+    icon: Search, 
+    desc: "Especialistas em colocar seu negócio no topo das buscas do Google." 
+  },
+  { 
+    name: "Meta Ads", 
+    icon: Share2, 
+    desc: "Campanhas de alta conversão no Instagram e Facebook." 
+  },
+  { 
+    name: "Análise de Dados", 
+    icon: BarChart3, 
+    desc: "Dashboards inteligentes para acompanhar seu crescimento em tempo real." 
+  },
+  { 
+    name: "Segurança de Dados", 
+    icon: ShieldCheck, 
+    desc: "Arquitetura protegida e em total conformidade com a LGPD." 
+  },
 ];
 
 export function SocialProof() {

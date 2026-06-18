@@ -7,28 +7,28 @@ import {
 
 const faqs = [
   {
-    question: "O que é a Gestão de Tráfego Pago e como ela ajuda minha clínica?",
-    answer: "Criamos e gerenciamos anúncios estratégicos no Google, Instagram e Facebook para colocar sua clínica na frente de pessoas que já buscam pelos seus procedimentos. O objetivo é atrair leads qualificados e decididos a comprar, para que sua equipe foque apenas no fechamento das vendas."
+    question: "Como a Integra.ai garante leads qualificados para o meu negócio?",
+    answer: "Unimos o poder dos anúncios no Google e Meta Ads com automações que filtram e qualificam cada contato. Assim, seu time comercial recebe apenas leads prontos para o fechamento, evitando perda de tempo com curiosos."
   },
   {
-    question: "Qual o valor mínimo que preciso investir em anúncios?",
-    answer: "O valor é pago diretamente às plataformas e definido por você. Recomendamos um investimento diário que permita gerar volume de contatos suficiente (geralmente a partir de R$ 30 a R$ 50/dia para negócios locais). O orçamento ideal é desenhado na nossa reunião consultiva."
+    question: "O que é tráfego pago e por que ele é essencial hoje?",
+    answer: "É a estratégia de colocar sua marca onde seus clientes estão buscando: no topo do Google e no feed do Instagram/Facebook. É a maneira mais rápida e escalável de atrair novos clientes todos os dias."
   },
   {
-    question: "Em quanto tempo começo a ver resultados e agendamentos?",
-    answer: "Os anúncios podem começar a gerar cliques em 24 a 48 horas após a campanha ir ao ar. No entanto, o Google e o Meta passam por um período de aprendizado. Em média, levamos de 1 a 3 meses para estabilizar os custos e atingir a alta performance."
+    question: "Como a análise de dados ajuda a otimizar meus resultados?",
+    answer: "Não trabalhamos com achismos. Através de dashboards inteligentes, monitoramos cada etapa do funil de vendas, permitindo ajustes rápidos nas campanhas para maximizar o seu Retorno sobre Investimento (ROI)."
   },
   {
-    question: "Vocês garantem vendas ou agendamentos lotados?",
-    answer: "Garantimos que seu anúncio aparecerá para pessoas qualificadas e com alta intenção de compra da sua região. Levamos a oportunidade até você, mas o fechamento depende do seu time comercial. É por isso que também oferecemos Automação de Atendimento para maximizar as conversões."
+    question: "A segurança dos meus dados e dos meus clientes é garantida?",
+    answer: "Com certeza. Utilizamos protocolos de segurança de ponta e estamos em total conformidade com a LGPD. Seus dados estratégicos e informações de clientes ficam protegidos em uma arquitetura isolada."
   },
   {
-    question: "E se entrarem apenas pessoas 'curiosas' ou desqualificadas?",
-    answer: "Nosso trabalho é justamente negativar palavras ruins e segmentar o público por raio de localização, faixa etária e até renda. Se a campanha trouxer curiosos, ajustamos a estratégia rapidamente até limparmos o público e focarmos apenas em leads High Ticket."
+    question: "Qual o valor ideal de investimento para começar a ver lucro?",
+    answer: "O valor é flexível e definido conforme sua meta. Recomendamos um orçamento que permita volume de dados para otimização (geralmente a partir de R$ 1.500/mês em anúncios). Desenhamos o plano ideal na nossa reunião consultiva."
   },
   {
-    question: "Terei acesso aos relatórios dos meus investimentos?",
-    answer: "Transparência total é nosso lema. Você terá acesso a relatórios inteligentes e fáceis de entender para acompanhar quanto foi investido, quantos leads chegaram no WhatsApp e qual o custo de cada um. Você nunca ficará 'no escuro'."
+    question: "Preciso de um sistema complexo para integrar as automações?",
+    answer: "Pelo contrário. Nossas soluções são plug-and-play e se integram às ferramentas que você já usa (WhatsApp, CRM, Site). O objetivo é simplificar sua operação, não complicá-la."
   }
 ];
 
