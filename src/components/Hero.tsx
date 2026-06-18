@@ -13,10 +13,10 @@ export function Hero() {
             <div className="inline-block px-4 py-1.5 mb-6 text-sm font-semibold tracking-wide text-blue-600 uppercase bg-blue-50 rounded-full border border-blue-100">
               Gestão de Tráfego Pago & Performance
             </div>
-            <h1 className="text-4xl md:text-6xl lg:text-7xl font-extrabold text-slate-900 leading-[1.1] mb-6 tracking-tight">
+            <h1 className="text-3xl md:text-6xl lg:text-7xl font-extrabold text-slate-900 leading-[1.1] mb-6 tracking-tight">
               Alcance o próximo nível: colocamos seu <span className="text-blue-600">negócio local</span> na frente de quem já quer comprar.
             </h1>
-            <p className="text-xl text-slate-600 mb-8 max-w-2xl leading-relaxed">
+            <p className="text-lg md:text-xl text-slate-600 mb-8 max-w-2xl leading-relaxed">
               Fature até <span className="font-bold text-slate-900">3x mais</span> com anúncios estratégicos no Google e Meta Ads, gerenciados por quem entende de <span className="font-bold text-slate-900">vendas e escala.</span>
             </p>
             <div className="flex flex-col sm:flex-row gap-4 justify-center lg:justify-start">
@@ -57,15 +57,15 @@ export function Hero() {
           <div className="bg-slate-900 rounded-[2.4rem] p-10">
             <div className="grid grid-cols-1 md:grid-cols-3 gap-12 items-center text-center">
               <div>
-                <div className="text-5xl font-extrabold text-blue-400 mb-2">3x+</div>
+                <div className="text-4xl md:text-5xl font-extrabold text-blue-400 mb-2">3x+</div>
                 <div className="text-slate-300 text-sm font-bold uppercase tracking-[0.2em]">Faturamento Estimado</div>
               </div>
               <div className="border-y md:border-y-0 md:border-x border-slate-800 py-10 md:py-0">
-                <div className="text-5xl font-extrabold text-blue-400 mb-2">24h</div>
+                <div className="text-4xl md:text-5xl font-extrabold text-blue-400 mb-2">24h</div>
                 <div className="text-slate-300 text-sm font-bold uppercase tracking-[0.2em]">Anúncios no Ar</div>
               </div>
               <div>
-                <div className="text-5xl font-extrabold text-blue-400 mb-2">100%</div>
+                <div className="text-4xl md:text-5xl font-extrabold text-blue-400 mb-2">100%</div>
                 <div className="text-slate-300 text-sm font-bold uppercase tracking-[0.2em]">Foco em Leads Qualificados</div>
               </div>
             </div>

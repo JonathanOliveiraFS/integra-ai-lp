@@ -47,7 +47,7 @@ export function Storytelling() {
               <Badge className="bg-blue-600 hover:bg-blue-600 text-white px-4 py-1 text-sm font-bold uppercase tracking-widest">
                 O Especialista por trás dos números
               </Badge>
-              <h2 className="text-4xl md:text-5xl font-extrabold text-slate-900 leading-tight">
+              <h2 className="text-3xl md:text-5xl font-extrabold text-slate-900 leading-tight">
                 Ciência, Estratégia e <span className="text-blue-600">Performance Real.</span>
               </h2>
             </div>
